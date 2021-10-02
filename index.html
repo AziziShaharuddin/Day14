@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <style></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="./weather.css">
+</head>
+<body>
+    <div id="container">
+        <div class="today">
+            <div class="weather-container">
+                <div class="main-today">
+                    <div class="main-desc">
+                        <h3 id="date-today"></h3>
+                        <p id="timezone"></p>
+                        <h1 id="temp"></h1>
+                        <p id="weather-desc"></p>
+                        <img id="weather-icon">
+                    </div>
+                </div>
+                <div class="subclass-today">
+                    <p id="humid"></p>
+                    <p id="pressure"></p>
+                    <p id="wind-speed"></p>
+                </div>
+            </div>
+            <div class="city-button">
+                <button onclick="currentApi('Kuala Lumpur')">Kuala Lumpur</button>
+                <button onclick="currentApi('Johor')">Johor</button>
+                <button onclick="currentApi('Kedah')">Kedah</button>
+                <button onclick="currentApi('Melaka')">Melaka</button>
+                <button onclick="currentApi('Perak')">Perak</button>
+                <button onclick="currentApi('Sarawak')">Sarawak</button>
+            </div>
+        </div>
+        <div id="daily">
+            <div class="forecast">
+                <h2></h2>
+                <img src="" alt="">
+                <div>
+                    <h2 class="temp-forecast"></h2>
+                    <h2 class="main-forecast"></h2>
+                    <h3 class="desc-forecast"></h3>
+                    <div class="forecast-below">
+                        <p class="humid-forecast"></p>
+                        <p class="pres-forecast"></p>
+                        <p class="wind-forecast"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast">
+                <h2></h2>
+                <img src="" alt="">
+                <div>
+                    <h2 class="temp-forecast"></h2>
+                    <h2 class="main-forecast"></h2>
+                    <h3 class="desc-forecast"></h3>
+                    <div class="forecast-below">
+                        <p class="humid-forecast"></p>
+                        <p class="pres-forecast"></p>
+                        <p class="wind-forecast"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast">
+                <h2></h2>
+                <img src="" alt="">
+                <div>
+                    <h2 class="temp-forecast"></h2>
+                    <h2 class="main-forecast"></h2>
+                    <h3 class="desc-forecast"></h3>
+                    <div class="forecast-below">
+                        <p class="humid-forecast"></p>
+                        <p class="pres-forecast"></p>
+                        <p class="wind-forecast"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast">
+                <h2></h2>
+                <img src="" alt="">
+                <div>
+                    <h2 class="temp-forecast"></h2>
+                    <h2 class="main-forecast"></h2>
+                    <h3 class="desc-forecast"></h3>
+                    <div class="forecast-below">
+                        <p class="humid-forecast"></p>
+                        <p class="pres-forecast"></p>
+                        <p class="wind-forecast"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast">
+                <h2></h2>
+                <img src="" alt="">
+                <div>
+                    <h2 class="temp-forecast"></h2>
+                    <h2 class="main-forecast"></h2>
+                    <h3 class="desc-forecast"></h3>
+                    <div class="forecast-below">
+                        <p class="humid-forecast"></p>
+                        <p class="pres-forecast"></p>
+                        <p class="wind-forecast"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./weather.js"></script>
+</body>
+</html>

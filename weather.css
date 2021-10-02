@@ -1,0 +1,110 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto';
+    background-image: url(./image/sky.jpeg);
+    overflow: hidden;
+    background-size: contain;
+}
+#container {
+    width: 900px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.today {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+}
+.weather-container {
+    width: 730px;
+    height: 100%;
+    background-color: #093d74;
+    padding: 10px;
+    position: relative;
+    color: rgb(197, 190, 190);
+}
+.main-today {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+.main-desc {
+    padding: 20px;
+    box-sizing: border-box;
+}
+.main-desc h1 {
+    font-size: 80px;
+}
+.weather-container p {
+    font-size: 20px;
+}
+.weather-container h3 {
+    font-size: 30px;
+}
+.main-desc > img {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}
+/* .weather-container h1::after {
+    content: '\00B0';
+} */
+#weather-icon {
+    width: 150px;
+    height:150px;
+    margin: 10px auto;
+    border: none;
+}
+.subclass-today {
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.city-button {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    text-align: center;
+    height: 50px;
+    width: 170px;
+    color: #093d74;
+}
+button:hover {
+    background-color: goldenrod;
+    transform: scale(1.05);
+    border-radius: 10px;
+    transition: all 0.7s;
+}
+#daily {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: calc(100vh - 300px);
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(197, 190, 190, 0.2);
+}
+.forecast {
+    width: 20%;
+    height: 100%;
+    padding: 25px 0;
+    border-radius: 10px;
+    background-color: #093d74;
+    margin: 0 5px;
+    color: rgb(197, 190, 190);
+    text-align: center;
+}
+.forecast-below {
+    text-align: left;
+    padding: 15px;
+}
+.forecast-below > * {
+    margin: 10px 0;
+}
